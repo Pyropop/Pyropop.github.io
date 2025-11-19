@@ -30,8 +30,8 @@ async function getWeather() {
     const condition = weatherData.weather[0].description;
 
     // Step 3: Display
-    document.getElementById('temp').textContent = `Temperature: ${temp}°C`;
-    document.getElementById('condition').textContent = `Condition: ${condition}`;
+    document.getElementById('temperature').textContent = `Temperature: ${value}°C`;
+    document.getElementById('windSpeed').textContent = `Condition: ${name}`;
   } catch (error) {
     console.error(error);
     document.getElementById('location').textContent = 'Unable to load weather data.';
