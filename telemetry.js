@@ -20,5 +20,5 @@ async function getUserLocation() {
 
 getUserLocation();
 // Alt 3 ✅ Option 3: Server-Side
-req.ip in Express.js
-$_SERVER['REMOTE_ADDR'] in PHPin
+//req.ip in Express.js
+//$_SERVER['REMOTE_ADDR'] in PHPin
