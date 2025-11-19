@@ -22,8 +22,8 @@ async function getWeather() {
     document.getElementById('location').textContent = `${city}, ${region}, ${country}`;
 
     // Step 2: Fetch weather data
-    const apiKey = 'YOUR_OPENWEATHERMAP_API_KEY';
-    const weatherRes = await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`);
+    const apiKey = 'https://api.met.no/weatherapi/locationforecast/2.0/classic?';
+    const weatherRes = await fetch(`https://api.met.no/weatherapi/locationforecast/2.0/classic?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`);
     const weatherData = await weatherRes.json();
 
     const temp = weatherData.main.temp;
