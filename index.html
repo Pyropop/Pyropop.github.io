@@ -23,7 +23,7 @@ async function getWeather() {
 
     // Step 2: Fetch weather data
     const apiKey = 'https://api.met.no/weatherapi/locationforecast/2.0/classic?';
-    const weatherRes = await fetch(`https://api.met.no/weatherapi/locationforecast/2.0/classic?lat=${latitude}&lon=${longitude}&units=metric&appid=${apiKey}`);
+    const weatherRes = await fetch(`https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=${latitude}&lon=${longitude}`);
     const weatherData = await weatherRes.json();
 
     const temp = weatherData.main.temp;
